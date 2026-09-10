@@ -123,11 +123,18 @@ for repo in user["repositories"]["nodes"] or []:
         lang_colors[name] = edge["node"].get("color") or "#64748B"
 
 total_bytes = sum(lang_bytes.values()) or 1
-top = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)[:4]
+sorted_langs = sorted(lang_bytes.items(), key=lambda x: x[1], reverse=True)
+
+primary = sorted_langs[:3]
+primary_pct = sum(size / total_bytes * 100 for _, size in primary)
+other_pct = max(0.0, 100.0 - primary_pct)
+
 top_langs = [
     (name, size / total_bytes * 100, lang_colors.get(name, "#64748B"))
-    for name, size in top
+    for name, size in primary
 ]
+
+top_langs.append(("Other", other_pct, "#64748B"))
 
 def esc(value):
     return (str(value)
@@ -149,9 +156,9 @@ def contribution_color(n):
 svg = []
 a = svg.append
 
-a('<svg width="1400" height="565" viewBox="0 0 1400 565" fill="none" xmlns="http://www.w3.org/2000/svg">')
+a('<svg width="1400" height="590" viewBox="0 0 1400 590" fill="none" xmlns="http://www.w3.org/2000/svg">')
 a('''<defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1400" y2="565">
+<linearGradient id="bg" x1="0" y1="0" x2="1400" y2="590">
   <stop stop-color="#0D1117"/>
   <stop offset="1" stop-color="#090D13"/>
 </linearGradient>
@@ -165,15 +172,15 @@ a('''<defs>
 .label{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#CBD5E1}
 .value{font:700 22px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}
 .small{font:500 12px Inter,Segoe UI,Arial,sans-serif;fill:#64748B}
-.quote{font:500 24px Inter,Segoe UI,Arial,sans-serif;fill:#B8A1FF}
+.quote{font:500 22px Inter,Segoe UI,Arial,sans-serif;fill:#B8A1FF}
 .mono{font:600 10px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#7C83A6;letter-spacing:1px}
-.lang{font:500 14px Inter,Segoe UI,Arial,sans-serif;fill:#D6DCE8}
-.pct{font:500 14px Inter,Segoe UI,Arial,sans-serif;fill:#AAB3C2}
+.lang{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#D6DCE8}
+.pct{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#AAB3C2}
 </style>
 </defs>''')
 
-a('<rect width="1400" height="565" rx="18" fill="url(#bg)"/>')
-a('<rect x="1" y="1" width="1398" height="563" rx="17" stroke="#1F2937"/>')
+a('<rect width="1400" height="590" rx="18" fill="url(#bg)"/>')
+a('<rect x="1" y="1" width="1398" height="588" rx="17" stroke="#1F2937"/>')
 a('<rect x="28" y="28" width="20" height="16" rx="4" fill="#7C3AED"/>')
 a('<circle cx="38" cy="36" r="3" fill="#C4B5FD"/>')
 a('<text x="62" y="43" class="title">GitHub Stats</text>')
@@ -245,37 +252,37 @@ for i, color in enumerate(["#101827","#312E81","#4C1D95","#6D28D9","#8B5CF6"]):
     a(f'<rect x="{i*15}" y="-10" width="10" height="10" rx="2" fill="{color}"/>')
 a('<text x="82" y="0" class="small">More</text></g>')
 
-a('<rect x="445" y="325" width="545" height="185" rx="16" fill="#0B1119" stroke="#253041"/>')
-a('<text x="470" y="362" class="cardTitle">Top Languages</text>')
-a('<rect x="470" y="390" width="450" height="9" rx="5" fill="#111827"/>')
+a('<rect x="445" y="325" width="545" height="210" rx="16" fill="#0B1119" stroke="#253041"/>')
+a('<text x="470" y="360" class="cardTitle">Top Languages</text>')
+a('<rect x="470" y="388" width="450" height="10" rx="5" fill="#111827"/>')
 
 bar_x, bar_w, bar_cursor = 470, 450, 470
 for i, (name, pct, color) in enumerate(top_langs):
     segment = bar_w * (pct / 100)
     radius = 5 if i in (0, len(top_langs)-1) else 0
-    a(f'<rect x="{bar_cursor:.1f}" y="390" width="{max(segment,1):.1f}" height="10" rx="{radius}" fill="{color}"/>')
+    a(f'<rect x="{bar_cursor:.1f}" y="388" width="{max(segment,1):.1f}" height="10" rx="{radius}" fill="{color}"/>')
     bar_cursor += segment
 
 for i in range(4):
-    y = 424 + i * 27
+    y = 425 + i * 28
     if i < len(top_langs):
         name, pct, color = top_langs[i]
-        a(f'<circle cx="480" cy="{y}" r="6" fill="{color}"/>')
-        a(f'<text x="498" y="{y+5}" class="lang">{esc(name)}</text>')
-        a(f'<text x="945" y="{y+5}" text-anchor="end" class="pct">{pct:.1f}%</text>')
+        a(f'<circle cx="482" cy="{y}" r="6" fill="{color}"/>')
+        a(f'<text x="502" y="{y+5}" class="lang">{esc(name)}</text>')
+        a(f'<text x="955" y="{y+5}" text-anchor="end" class="pct">{pct:.1f}%</text>')
     else:
-        a(f'<circle cx="480" cy="{y}" r="6" fill="#334155"/>')
-        a(f'<text x="498" y="{y+5}" class="lang">—</text>')
+        a(f'<circle cx="482" cy="{y}" r="6" fill="#334155"/>')
+        a(f'<text x="502" y="{y+5}" class="lang">—</text>')
 
-a('<rect x="1015" y="325" width="355" height="185" rx="16" fill="#0B1119" stroke="#253041"/>')
+a('<rect x="1015" y="325" width="355" height="210" rx="16" fill="#0B1119" stroke="#253041"/>')
 a('<text x="1050" y="382" class="quote">“Em constante</text>')
-a('<text x="1050" y="414" class="quote">evolução.”</text>')
-a('<text x="1050" y="460" class="mono">MESMO PROCESSO.</text>')
-a('<text x="1050" y="480" class="mono">MAIS RESULTADO.</text>')
-a('<text x="1335" y="486" text-anchor="end" style="font:700 16px ui-monospace,Consolas,monospace;fill:#8B5CF6;">&lt;/&gt;</text>')
+a('<text x="1050" y="410" class="quote">evolução.”</text>')
+a('<text x="1050" y="466" class="mono">MESMO PROCESSO.</text>')
+a('<text x="1050" y="486" class="mono">MAIS RESULTADO.</text>')
+a('<text x="1335" y="505" text-anchor="end" style="font:700 16px ui-monospace,Consolas,monospace;fill:#8B5CF6;">&lt;/&gt;</text>')
 
-a('<line x1="30" y1="535" x2="1370" y2="535" stroke="#202938"/>')
-a('<line x1="30" y1="535" x2="150" y2="535" stroke="url(#purpleLine)" stroke-width="2"/>')
+a('<line x1="30" y1="560" x2="1370" y2="560" stroke="#202938"/>')
+a('<line x1="30" y1="560" x2="150" y2="560" stroke="url(#purpleLine)" stroke-width="2"/>')
 a('</svg>')
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
