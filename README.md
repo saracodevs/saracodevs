@@ -27,3 +27,12 @@
     </td>
   </tr>
 </table>
+
+
+<h2>⚡ Tech Stack</h2>
+
+<div align="center">
+  <img src="https://skillicons.dev/icons?i=java,js,html,css,git,github,figma,vscode&theme=dark" />
+</div>
+
+<br>
