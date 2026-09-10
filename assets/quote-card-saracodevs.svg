@@ -1,0 +1,41 @@
+<svg width="260" height="230" viewBox="0 0 260 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="border" x1="0" y1="0" x2="260" y2="230" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7C3AED"/>
+      <stop offset="1" stop-color="#312E81"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect x="1.5" y="1.5" width="257" height="227" rx="18" fill="#0D1117" stroke="url(#border)" stroke-width="3"/>
+
+  <text x="28" y="45" fill="#A78BFA" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600">
+    Grandes
+  </text>
+  <text x="28" y="68" fill="#C4B5FD" font-family="Segoe UI, Arial, sans-serif" font-size="15" font-weight="600">
+    resultados
+  </text>
+  <text x="28" y="91" fill="#EDE9FE" font-family="Segoe UI, Arial, sans-serif" font-size="15">
+    vêm de pequenos
+  </text>
+  <text x="28" y="114" fill="#EDE9FE" font-family="Segoe UI, Arial, sans-serif" font-size="15">
+    commits diários.
+  </text>
+
+  <line x1="28" y1="140" x2="78" y2="140" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round" filter="url(#glow)"/>
+
+  <text x="28" y="174" fill="#6B7280" font-family="Consolas, monospace" font-size="10" letter-spacing="1.2">
+    SMALL COMMITS.
+  </text>
+  <text x="28" y="192" fill="#6B7280" font-family="Consolas, monospace" font-size="10" letter-spacing="1.2">
+    BIG EVOLUTION.
+  </text>
+
+  <text x="210" y="205" fill="#8B5CF6" font-family="Consolas, monospace" font-size="20">&lt;/&gt;</text>
+</svg>
