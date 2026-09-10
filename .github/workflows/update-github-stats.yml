@@ -1,0 +1,45 @@
+name: Atualizar GitHub Stats
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 3 * * *"
+  push:
+    branches: ["main"]
+    paths-ignore:
+      - "assets/github-stats-saracodevs.svg"
+
+permissions:
+  contents: write
+
+jobs:
+  update-stats:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Gerar GitHub Stats
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_USERNAME: saracodevs
+          OUTPUT_PATH: assets/github-stats-saracodevs.svg
+        run: python scripts/generate_github_stats.py
+
+      - name: Salvar atualização
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/github-stats-saracodevs.svg
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração."
+          else
+            git commit -m "chore: update profile stats [skip ci]"
+            git push
+          fi
