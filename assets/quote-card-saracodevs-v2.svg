@@ -1,0 +1,20 @@
+<svg width="260" height="230" viewBox="0 0 260 230" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="border" x1="0" y1="0" x2="260" y2="230">
+    <stop stop-color="#8B5CF6"/>
+    <stop offset="1" stop-color="#4C1D95"/>
+  </linearGradient>
+</defs>
+<rect x="2" y="2" width="256" height="226" rx="18" fill="#0D1117" stroke="url(#border)" stroke-width="3"/>
+
+<text x="25" y="48" fill="#A78BFA" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700">Grandes</text>
+<text x="25" y="77" fill="#C4B5FD" font-family="Segoe UI,Arial,sans-serif" font-size="22" font-weight="700">resultados</text>
+<text x="25" y="106" fill="#F5F3FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="600">vêm de pequenos</text>
+<text x="25" y="132" fill="#F5F3FF" font-family="Segoe UI,Arial,sans-serif" font-size="18" font-weight="600">commits diários.</text>
+
+<line x1="25" y1="157" x2="78" y2="157" stroke="#8B5CF6" stroke-width="3" stroke-linecap="round"/>
+
+<text x="25" y="187" fill="#818CF8" font-family="Consolas,monospace" font-size="10" letter-spacing="1">SMALL COMMITS.</text>
+<text x="25" y="204" fill="#6B7280" font-family="Consolas,monospace" font-size="10" letter-spacing="1">BIG EVOLUTION.</text>
+<text x="211" y="204" fill="#8B5CF6" font-family="Consolas,monospace" font-size="19">&lt;/&gt;</text>
+</svg>
