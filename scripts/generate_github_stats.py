@@ -149,9 +149,9 @@ def contribution_color(n):
 svg = []
 a = svg.append
 
-a('<svg width="1400" height="525" viewBox="0 0 1400 525" fill="none" xmlns="http://www.w3.org/2000/svg">')
+a('<svg width="1400" height="565" viewBox="0 0 1400 565" fill="none" xmlns="http://www.w3.org/2000/svg">')
 a('''<defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1400" y2="525">
+<linearGradient id="bg" x1="0" y1="0" x2="1400" y2="565">
   <stop stop-color="#0D1117"/>
   <stop offset="1" stop-color="#090D13"/>
 </linearGradient>
@@ -165,15 +165,15 @@ a('''<defs>
 .label{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#CBD5E1}
 .value{font:700 22px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}
 .small{font:500 12px Inter,Segoe UI,Arial,sans-serif;fill:#64748B}
-.quote{font:600 22px Inter,Segoe UI,Arial,sans-serif;fill:#B8A1FF}
+.quote{font:500 24px Inter,Segoe UI,Arial,sans-serif;fill:#B8A1FF}
 .mono{font:600 10px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#7C83A6;letter-spacing:1px}
 .lang{font:500 14px Inter,Segoe UI,Arial,sans-serif;fill:#D6DCE8}
 .pct{font:500 14px Inter,Segoe UI,Arial,sans-serif;fill:#AAB3C2}
 </style>
 </defs>''')
 
-a('<rect width="1400" height="525" rx="18" fill="url(#bg)"/>')
-a('<rect x="1" y="1" width="1398" height="523" rx="17" stroke="#1F2937"/>')
+a('<rect width="1400" height="565" rx="18" fill="url(#bg)"/>')
+a('<rect x="1" y="1" width="1398" height="563" rx="17" stroke="#1F2937"/>')
 a('<rect x="28" y="28" width="20" height="16" rx="4" fill="#7C3AED"/>')
 a('<circle cx="38" cy="36" r="3" fill="#C4B5FD"/>')
 a('<text x="62" y="43" class="title">GitHub Stats</text>')
@@ -245,19 +245,19 @@ for i, color in enumerate(["#101827","#312E81","#4C1D95","#6D28D9","#8B5CF6"]):
     a(f'<rect x="{i*15}" y="-10" width="10" height="10" rx="2" fill="{color}"/>')
 a('<text x="82" y="0" class="small">More</text></g>')
 
-a('<rect x="445" y="325" width="545" height="145" rx="16" fill="#0B1119" stroke="#253041"/>')
-a('<text x="470" y="358" class="cardTitle">Top Languages</text>')
-a('<rect x="470" y="378" width="450" height="9" rx="5" fill="#111827"/>')
+a('<rect x="445" y="325" width="545" height="185" rx="16" fill="#0B1119" stroke="#253041"/>')
+a('<text x="470" y="362" class="cardTitle">Top Languages</text>')
+a('<rect x="470" y="390" width="450" height="9" rx="5" fill="#111827"/>')
 
 bar_x, bar_w, bar_cursor = 470, 450, 470
 for i, (name, pct, color) in enumerate(top_langs):
     segment = bar_w * (pct / 100)
     radius = 5 if i in (0, len(top_langs)-1) else 0
-    a(f'<rect x="{bar_cursor:.1f}" y="378" width="{max(segment,1):.1f}" height="10" rx="{radius}" fill="{color}"/>')
+    a(f'<rect x="{bar_cursor:.1f}" y="390" width="{max(segment,1):.1f}" height="10" rx="{radius}" fill="{color}"/>')
     bar_cursor += segment
 
 for i in range(4):
-    y = 410 + i * 24
+    y = 424 + i * 27
     if i < len(top_langs):
         name, pct, color = top_langs[i]
         a(f'<circle cx="480" cy="{y}" r="6" fill="{color}"/>')
@@ -267,15 +267,15 @@ for i in range(4):
         a(f'<circle cx="480" cy="{y}" r="6" fill="#334155"/>')
         a(f'<text x="498" y="{y+5}" class="lang">—</text>')
 
-a('<rect x="1015" y="325" width="355" height="145" rx="16" fill="#0B1119" stroke="#253041"/>')
-a('<text x="1045" y="372" class="quote">“Em constante</text>')
-a('<text x="1045" y="400" class="quote">evolução.”</text>')
-a('<text x="1045" y="434" class="mono">MESMO PROCESSO.</text>')
-a('<text x="1045" y="451" class="mono">MAIS RESULTADO.</text>')
-a('<text x="1335" y="452" text-anchor="end" style="font:700 16px ui-monospace,Consolas,monospace;fill:#8B5CF6;">&lt;/&gt;</text>')
+a('<rect x="1015" y="325" width="355" height="185" rx="16" fill="#0B1119" stroke="#253041"/>')
+a('<text x="1050" y="382" class="quote">“Em constante</text>')
+a('<text x="1050" y="414" class="quote">evolução.”</text>')
+a('<text x="1050" y="460" class="mono">MESMO PROCESSO.</text>')
+a('<text x="1050" y="480" class="mono">MAIS RESULTADO.</text>')
+a('<text x="1335" y="486" text-anchor="end" style="font:700 16px ui-monospace,Consolas,monospace;fill:#8B5CF6;">&lt;/&gt;</text>')
 
-a('<line x1="30" y1="495" x2="1370" y2="495" stroke="#202938"/>')
-a('<line x1="30" y1="495" x2="150" y2="495" stroke="url(#purpleLine)" stroke-width="2"/>')
+a('<line x1="30" y1="535" x2="1370" y2="535" stroke="#202938"/>')
+a('<line x1="30" y1="535" x2="150" y2="535" stroke="url(#purpleLine)" stroke-width="2"/>')
 a('</svg>')
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
