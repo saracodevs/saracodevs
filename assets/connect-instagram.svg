@@ -1,0 +1,22 @@
+<svg width="320" height="150" viewBox="0 0 320 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+.title{font:700 20px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}
+.sub{font:500 13px Inter,Segoe UI,Arial,sans-serif;fill:#94A3B8}
+.cta{font:600 12px Inter,Segoe UI,Arial,sans-serif;fill:#C4B5FD}
+</style>
+</defs>
+<rect width="320" height="150" rx="16" fill="#0B1119"/>
+<rect x="1" y="1" width="318" height="148" rx="15" stroke="#253041"/>
+
+        <rect x="40" y="38" width="54" height="54" rx="14" fill="#101827" stroke="#A855F7"/>
+        <rect x="54" y="52" width="26" height="26" rx="8" fill="none" stroke="#E5E7EB" stroke-width="2"/>
+        <circle cx="67" cy="65" r="6" fill="none" stroke="#E5E7EB" stroke-width="2"/>
+        <circle cx="75" cy="57" r="2.2" fill="#A855F7"/>
+        
+<text x="112" y="61" class="title">Instagram</text>
+<text x="112" y="83" class="sub">@saracrz.co</text>
+<line x1="112" y1="97" x2="280" y2="97" stroke="#202938"/>
+<text x="112" y="120" class="cta">Open Instagram</text>
+<path d="M266 116h12M273 110l6 6-6 6" stroke="#A855F7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

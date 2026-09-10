@@ -1,0 +1,21 @@
+<svg width="320" height="150" viewBox="0 0 320 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+<style>
+.title{font:700 20px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}
+.sub{font:500 13px Inter,Segoe UI,Arial,sans-serif;fill:#94A3B8}
+.cta{font:600 12px Inter,Segoe UI,Arial,sans-serif;fill:#C4B5FD}
+</style>
+</defs>
+<rect width="320" height="150" rx="16" fill="#0B1119"/>
+<rect x="1" y="1" width="318" height="148" rx="15" stroke="#253041"/>
+
+        <rect x="40" y="38" width="54" height="54" rx="12" fill="#101827" stroke="#8B5CF6"/>
+        <rect x="51" y="54" width="32" height="22" rx="3" fill="none" stroke="#E5E7EB" stroke-width="2"/>
+        <path d="M52 56l15 11 15-11" fill="none" stroke="#8B5CF6" stroke-width="2"/>
+        
+<text x="112" y="61" class="title">Email</text>
+<text x="112" y="83" class="sub">sara.codevs@gmail.com</text>
+<line x1="112" y1="97" x2="280" y2="97" stroke="#202938"/>
+<text x="112" y="120" class="cta">Send email</text>
+<path d="M266 116h12M273 110l6 6-6 6" stroke="#8B5CF6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
