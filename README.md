@@ -145,3 +145,11 @@ alt="Grandes resultados vêm de pequenos commits diários"
 </p>
 
 <br>
+
+<p align="center">
+  <img
+    src="./assets/footer-saracodevs.svg"
+    width="100%"
+    alt="sara.codevs terminal footer"
+  />
+</p>
