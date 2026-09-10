@@ -40,7 +40,6 @@ alt="Grandes resultados vêm de pequenos commits diários"
 </tr>
 </table>
 
-
 <h2>⚡ Tech Stack</h2>
 
 <div align="center">
@@ -100,10 +99,6 @@ alt="Grandes resultados vêm de pequenos commits diários"
 </table>
 
 </div>
-
-<br>
-
-
 <br>
 
 <h2>📊 GitHub Stats</h2>
@@ -116,10 +111,6 @@ alt="Grandes resultados vêm de pequenos commits diários"
   />
 </p>
 
-<br>
-
-
-<br>
 
 <h2>🚀 Featured Projects</h2>
 
