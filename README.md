@@ -1,16 +1,38 @@
-## Hi there 👋
+Hi, I'm Sara 👋
 
-<!--
-**saracodevs/saracodevs** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Software Developer
 
-Here are some ideas to get you started:
+Building my journey in technology through
+real projects, continuous learning and lots of code.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+────────────────────────────────────
+
+About me
+
+💻 Software Development
+☕ Currently studying Java
+🌐 Exploring Web Development
+🎨 UI prototyping with Figma
+🚀 Building real-world projects
+
+────────────────────────────────────
+
+Tech Stack
+
+Java | JavaScript | HTML | CSS | Git | GitHub | Figma
+
+────────────────────────────────────
+
+Featured Projects
+
+01 — Controle Financeiro Automatizado
+02 — Projeto Web
+03 — Em breve...
+
+────────────────────────────────────
+
+GitHub Stats
+
+<div>
+  <img src="https://skillicons.dev/icons?i=java,js,html,css,git,github,figma,vscode" />
+</div>
