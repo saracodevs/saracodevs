@@ -1,0 +1,77 @@
+<svg width="1600" height="240" viewBox="0 0 1600 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#111827"/>
+    <stop offset="1" stop-color="#0D1117"/>
+  </linearGradient>
+  <linearGradient id="stroke" x1="0" y1="0" x2="1600" y2="240">
+    <stop stop-color="#273449"/>
+    <stop offset="1" stop-color="#1F2937"/>
+  </linearGradient>
+</defs>
+
+<rect width="1600" height="240" fill="transparent"/>
+
+<!-- Card helper: x positions 20, 215, 410, 605, 800, 995, 1190, 1385 -->
+<g font-family="Segoe UI, Arial, sans-serif" text-anchor="middle">
+
+<!-- Java -->
+<g transform="translate(20,20)">
+<rect width="175" height="200" rx="18" fill="url(#card)" stroke="url(#stroke)" stroke-width="2"/>
+<image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" x="52" y="28" width="72" height="72"/>
+<text x="87.5" y="150" fill="#F3F4F6" font-size="22" font-weight="600">Java</text>
+</g>
+
+<!-- JS -->
+<g transform="translate(215,20)">
+<rect width="175" height="200" rx="18" fill="url(#card)" stroke="url(#stroke)" stroke-width="2"/>
+<image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" x="52" y="28" width="72" height="72"/>
+<text x="87.5" y="150" fill="#F3F4F6" font-size="22" font-weight="600">JavaScript</text>
+</g>
+
+<!-- HTML -->
+<g transform="translate(410,20)">
+<rect width="175" height="200" rx="18" fill="url(#card)" stroke="url(#stroke)" stroke-width="2"/>
+<image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" x="52" y="28" width="72" height="72"/>
+<text x="87.5" y="150" fill="#F3F4F6" font-size="22" font-weight="600">HTML5</text>
+</g>
+
+<!-- CSS -->
+<g transform="translate(605,20)">
+<rect width="175" height="200" rx="18" fill="url(#card)" stroke="url(#stroke)" stroke-width="2"/>
+<image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" x="52" y="28" width="72" height="72"/>
+<text x="87.5" y="150" fill="#F3F4F6" font-size="22" font-weight="600">CSS3</text>
+</g>
+
+<!-- Git -->
+<g transform="translate(800,20)">
+<rect width="175" height="200" rx="18" fill="url(#card)" stroke="url(#stroke)" stroke-width="2"/>
+<image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" x="52" y="28" width="72" height="72"/>
+<text x="87.5" y="150" fill="#F3F4F6" font-size="22" font-weight="600">Git</text>
+</g>
+
+<!-- GitHub -->
+<g transform="translate(995,20)">
+<rect width="175" height="200" rx="18" fill="url(#card)" stroke="url(#stroke)" stroke-width="2"/>
+<image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" x="52" y="28" width="72" height="72"/>
+<circle cx="87.5" cy="64" r="36" fill="#F9FAFB" opacity="0.95"/>
+<image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" x="52" y="28" width="72" height="72"/>
+<text x="87.5" y="150" fill="#F3F4F6" font-size="22" font-weight="600">GitHub</text>
+</g>
+
+<!-- Figma -->
+<g transform="translate(1190,20)">
+<rect width="175" height="200" rx="18" fill="url(#card)" stroke="url(#stroke)" stroke-width="2"/>
+<image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" x="52" y="28" width="72" height="72"/>
+<text x="87.5" y="150" fill="#F3F4F6" font-size="22" font-weight="600">Figma</text>
+</g>
+
+<!-- VS Code -->
+<g transform="translate(1385,20)">
+<rect width="175" height="200" rx="18" fill="url(#card)" stroke="url(#stroke)" stroke-width="2"/>
+<image href="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" x="52" y="28" width="72" height="72"/>
+<text x="87.5" y="150" fill="#F3F4F6" font-size="22" font-weight="600">VS Code</text>
+</g>
+
+</g>
+</svg>
