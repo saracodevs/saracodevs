@@ -149,9 +149,9 @@ def contribution_color(n):
 svg = []
 a = svg.append
 
-a('<svg width="1400" height="610" viewBox="0 0 1400 610" fill="none" xmlns="http://www.w3.org/2000/svg">')
+a('<svg width="1400" height="525" viewBox="0 0 1400 525" fill="none" xmlns="http://www.w3.org/2000/svg">')
 a('''<defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1400" y2="610">
+<linearGradient id="bg" x1="0" y1="0" x2="1400" y2="525">
   <stop stop-color="#0D1117"/>
   <stop offset="1" stop-color="#090D13"/>
 </linearGradient>
@@ -165,22 +165,22 @@ a('''<defs>
 .label{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#CBD5E1}
 .value{font:700 22px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}
 .small{font:500 12px Inter,Segoe UI,Arial,sans-serif;fill:#64748B}
-.quote{font:italic 500 27px Georgia,serif;fill:#B8A1FF}
+.quote{font:600 22px Inter,Segoe UI,Arial,sans-serif;fill:#B8A1FF}
 .mono{font:600 10px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#7C83A6;letter-spacing:1px}
 .lang{font:500 14px Inter,Segoe UI,Arial,sans-serif;fill:#D6DCE8}
 .pct{font:500 14px Inter,Segoe UI,Arial,sans-serif;fill:#AAB3C2}
 </style>
 </defs>''')
 
-a('<rect width="1400" height="610" rx="18" fill="url(#bg)"/>')
-a('<rect x="1" y="1" width="1398" height="608" rx="17" stroke="#1F2937"/>')
+a('<rect width="1400" height="525" rx="18" fill="url(#bg)"/>')
+a('<rect x="1" y="1" width="1398" height="523" rx="17" stroke="#1F2937"/>')
 a('<rect x="28" y="28" width="20" height="16" rx="4" fill="#7C3AED"/>')
 a('<circle cx="38" cy="36" r="3" fill="#C4B5FD"/>')
 a('<text x="62" y="43" class="title">GitHub Stats</text>')
 a('<line x1="190" y1="36" x2="1278" y2="36" stroke="#202938"/>')
 a('<text x="1292" y="41" class="mono">//</text>')
 
-a('<rect x="30" y="80" width="420" height="430" rx="16" fill="#0B1119" stroke="#253041"/>')
+a('<rect x="30" y="80" width="390" height="390" rx="16" fill="#0B1119" stroke="#253041"/>')
 
 rows = [
     ("Total Contributions", total_contributions, "plus"),
@@ -189,7 +189,7 @@ rows = [
     ("Total Repositories", repo_count, "repo"),
     ("Followers", followers, "user"),
 ]
-ys = [126, 190, 254, 318, 382]
+ys = [120, 180, 240, 300, 360]
 
 for (label, value, kind), y in zip(rows, ys):
     a(f'<g transform="translate(58 {y})"><circle cx="12" cy="12" r="11" fill="#131B2A" stroke="#6D5DFB"/>')
@@ -204,20 +204,20 @@ for (label, value, kind), y in zip(rows, ys):
     else:
         a('<circle cx="12" cy="9" r="4" fill="#9C8CFF"/><path d="M5 19c1-5 4-7 7-7s6 2 7 7" stroke="#9C8CFF" stroke-width="2" fill="none" stroke-linecap="round"/>')
     a(f'<text x="38" y="17" class="label">{esc(label)}</text>')
-    a(f'<text x="330" y="17" text-anchor="end" class="value">{value}</text></g>')
+    a(f'<text x="300" y="17" text-anchor="end" class="value">{value}</text></g>')
 
-a('<line x1="58" y1="445" x2="422" y2="445" stroke="#192334"/>')
-a(f'<text x="58" y="474" class="small">atualizado automaticamente • {today.strftime("%d/%m/%Y")}</text>')
+a('<line x1="58" y1="415" x2="392" y2="415" stroke="#192334"/>')
+a(f'<text x="58" y="445" class="small">atualizado automaticamente • {today.strftime("%d/%m/%Y")}</text>')
 
-a('<rect x="480" y="80" width="890" height="230" rx="16" fill="#0B1119" stroke="#253041"/>')
-a(f'<text x="506" y="112" class="cardTitle">Contributions ({year})</text>')
+a('<rect x="445" y="80" width="925" height="220" rx="16" fill="#0B1119" stroke="#253041"/>')
+a(f'<text x="470" y="112" class="cardTitle">Contributions ({year})</text>')
 
 jan1 = date(year, 1, 1)
 dec31 = date(year, 12, 31)
 grid_start = jan1 - timedelta(days=(jan1.weekday() + 1) % 7)
 weeks = math.ceil(((dec31 - grid_start).days + 1) / 7)
 
-grid_x, grid_y, gap, size = 550, 165, 14, 10
+grid_x, grid_y, gap, size = 520, 160, 14, 10
 months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
 
 for month in range(1, 13):
@@ -227,7 +227,7 @@ for month in range(1, 13):
     a(f'<text x="{x}" y="145" class="small">{months[month-1]}</text>')
 
 for label, row in [("Mon",1),("Wed",3),("Fri",5)]:
-    a(f'<text x="506" y="{grid_y + row*gap + 9}" class="small">{label}</text>')
+    a(f'<text x="470" y="{grid_y + row*gap + 9}" class="small">{label}</text>')
 
 for week_index in range(weeks):
     for row_index in range(7):
@@ -240,43 +240,42 @@ for week_index in range(weeks):
         y = grid_y + row_index * gap
         a(f'<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="2" fill="{fill}" opacity="{opacity}"/>')
 
-a('<g transform="translate(1190 283)"><text x="-42" y="0" class="small">Less</text>')
+a('<g transform="translate(1215 278)"><text x="-42" y="0" class="small">Less</text>')
 for i, color in enumerate(["#101827","#312E81","#4C1D95","#6D28D9","#8B5CF6"]):
     a(f'<rect x="{i*15}" y="-10" width="10" height="10" rx="2" fill="{color}"/>')
 a('<text x="82" y="0" class="small">More</text></g>')
 
-a('<rect x="480" y="335" width="430" height="175" rx="16" fill="#0B1119" stroke="#253041"/>')
-a('<text x="506" y="370" class="cardTitle">Top Languages</text>')
-a('<rect x="506" y="392" width="352" height="10" rx="5" fill="#111827"/>')
+a('<rect x="445" y="325" width="545" height="145" rx="16" fill="#0B1119" stroke="#253041"/>')
+a('<text x="470" y="358" class="cardTitle">Top Languages</text>')
+a('<rect x="470" y="378" width="450" height="9" rx="5" fill="#111827"/>')
 
-bar_x, bar_w, bar_cursor = 506, 352, 506
+bar_x, bar_w, bar_cursor = 470, 450, 470
 for i, (name, pct, color) in enumerate(top_langs):
     segment = bar_w * (pct / 100)
     radius = 5 if i in (0, len(top_langs)-1) else 0
-    a(f'<rect x="{bar_cursor:.1f}" y="392" width="{max(segment,1):.1f}" height="10" rx="{radius}" fill="{color}"/>')
+    a(f'<rect x="{bar_cursor:.1f}" y="378" width="{max(segment,1):.1f}" height="10" rx="{radius}" fill="{color}"/>')
     bar_cursor += segment
 
 for i in range(4):
-    y = 430 + i * 26
+    y = 410 + i * 24
     if i < len(top_langs):
         name, pct, color = top_langs[i]
-        a(f'<circle cx="516" cy="{y}" r="6" fill="{color}"/>')
-        a(f'<text x="534" y="{y+5}" class="lang">{esc(name)}</text>')
-        a(f'<text x="864" y="{y+5}" text-anchor="end" class="pct">{pct:.1f}%</text>')
+        a(f'<circle cx="480" cy="{y}" r="6" fill="{color}"/>')
+        a(f'<text x="498" y="{y+5}" class="lang">{esc(name)}</text>')
+        a(f'<text x="945" y="{y+5}" text-anchor="end" class="pct">{pct:.1f}%</text>')
     else:
-        a(f'<circle cx="516" cy="{y}" r="6" fill="#334155"/>')
-        a(f'<text x="534" y="{y+5}" class="lang">—</text>')
+        a(f'<circle cx="480" cy="{y}" r="6" fill="#334155"/>')
+        a(f'<text x="498" y="{y+5}" class="lang">—</text>')
 
-a('<rect x="940" y="335" width="430" height="175" rx="16" fill="#0B1119" stroke="#253041"/>')
-a('<text x="972" y="390" class="quote">“Em constante</text>')
-a('<text x="972" y="426" class="quote">evolução.”</text>')
-a('<text x="972" y="462" class="mono">MESMO PROCESSO.</text>')
-a('<text x="972" y="480" class="mono">MAIS RESULTADO.</text>')
-a('<text x="1328" y="484" text-anchor="end" style="font:700 18px ui-monospace,Consolas,monospace;fill:#8B5CF6;">&lt;/&gt;</text>')
+a('<rect x="1015" y="325" width="355" height="145" rx="16" fill="#0B1119" stroke="#253041"/>')
+a('<text x="1045" y="372" class="quote">“Em constante</text>')
+a('<text x="1045" y="400" class="quote">evolução.”</text>')
+a('<text x="1045" y="434" class="mono">MESMO PROCESSO.</text>')
+a('<text x="1045" y="451" class="mono">MAIS RESULTADO.</text>')
+a('<text x="1335" y="452" text-anchor="end" style="font:700 16px ui-monospace,Consolas,monospace;fill:#8B5CF6;">&lt;/&gt;</text>')
 
-a('<line x1="30" y1="550" x2="1370" y2="550" stroke="#202938"/>')
-a('<line x1="30" y1="550" x2="160" y2="550" stroke="url(#purpleLine)" stroke-width="2"/>')
-a('<text x="30" y="580" class="mono">&gt; sara.codevs@github:~$ evolving...</text>')
+a('<line x1="30" y1="495" x2="1370" y2="495" stroke="#202938"/>')
+a('<line x1="30" y1="495" x2="150" y2="495" stroke="url(#purpleLine)" stroke-width="2"/>')
 a('</svg>')
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
