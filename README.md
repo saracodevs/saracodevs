@@ -117,3 +117,20 @@ alt="Grandes resultados vêm de pequenos commits diários"
 </p>
 
 <br>
+
+
+<br>
+
+<h2>🚀 Featured Projects</h2>
+
+<p align="center">
+  <a href="https://github.com/saracodevs/controle-financeiro-automatizado">
+    <img
+      src="./assets/featured-projects-saracodevs.svg"
+      width="100%"
+      alt="Featured Projects"
+    />
+  </a>
+</p>
+
+<br>
