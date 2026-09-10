@@ -43,58 +43,62 @@ alt="Grandes resultados vêm de pequenos commits diários"
 
 <h2>⚡ Tech Stack</h2>
 
-<table width="100%">
+<div align="center">
+
+<table>
 <tr>
 
-<td align="center" width="12.5%">
+<td align="center" width="90">
 <img src="https://skillicons.dev/icons?i=java&theme=dark" width="65" height="65" alt="Java"/>
-<br><br>
-<strong>Java</strong>
+<br>
+<b>Java</b>
 </td>
 
-<td align="center" width="12.5%">
+<td align="center" width="90">
 <img src="https://skillicons.dev/icons?i=js&theme=dark" width="65" height="65" alt="JavaScript"/>
-<br><br>
-<strong>JavaScript</strong>
+<br>
+<b>JavaScript</b>
 </td>
 
-<td align="center" width="12.5%">
+<td align="center" width="90">
 <img src="https://skillicons.dev/icons?i=html&theme=dark" width="65" height="65" alt="HTML5"/>
-<br><br>
-<strong>HTML5</strong>
+<br>
+<b>HTML5</b>
 </td>
 
-<td align="center" width="12.5%">
+<td align="center" width="90">
 <img src="https://skillicons.dev/icons?i=css&theme=dark" width="65" height="65" alt="CSS3"/>
-<br><br>
-<strong>CSS3</strong>
+<br>
+<b>CSS3</b>
 </td>
 
-<td align="center" width="12.5%">
+<td align="center" width="90">
 <img src="https://skillicons.dev/icons?i=git&theme=dark" width="65" height="65" alt="Git"/>
-<br><br>
-<strong>Git</strong>
+<br>
+<b>Git</b>
 </td>
 
-<td align="center" width="12.5%">
+<td align="center" width="90">
 <img src="https://skillicons.dev/icons?i=github&theme=dark" width="65" height="65" alt="GitHub"/>
-<br><br>
-<strong>GitHub</strong>
+<br>
+<b>GitHub</b>
 </td>
 
-<td align="center" width="12.5%">
+<td align="center" width="90">
 <img src="https://skillicons.dev/icons?i=figma&theme=dark" width="65" height="65" alt="Figma"/>
-<br><br>
-<strong>Figma</strong>
+<br>
+<b>Figma</b>
 </td>
 
-<td align="center" width="12.5%">
+<td align="center" width="90">
 <img src="https://skillicons.dev/icons?i=vscode&theme=dark" width="65" height="65" alt="VS Code"/>
-<br><br>
-<strong>VS Code</strong>
+<br>
+<b>VS Code</b>
 </td>
 
 </tr>
 </table>
+
+</div>
 
 <br>
