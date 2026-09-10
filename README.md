@@ -102,3 +102,18 @@ alt="Grandes resultados vêm de pequenos commits diários"
 </div>
 
 <br>
+
+
+<br>
+
+<h2>📊 GitHub Stats</h2>
+
+<p align="center">
+  <img
+    src="./assets/github-stats-saracodevs.svg"
+    width="100%"
+    alt="GitHub Stats"
+  />
+</p>
+
+<br>
