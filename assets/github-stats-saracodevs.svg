@@ -49,7 +49,7 @@
 <text x="38" y="17" class="label">Followers</text>
 <text x="300" y="17" text-anchor="end" class="value">1</text></g>
 <line x1="58" y1="415" x2="392" y2="415" stroke="#192334"/>
-<text x="58" y="445" class="small">atualizado automaticamente • 10/09/2026</text>
+<text x="58" y="445" class="small">atualizado automaticamente • 11/09/2026</text>
 <rect x="445" y="80" width="925" height="220" rx="16" fill="#0B1119" stroke="#253041"/>
 <text x="470" y="112" class="cardTitle">Contributions (2026)</text>
 <text x="520" y="145" class="small">Jan</text>
@@ -324,7 +324,7 @@
 <rect x="1024" y="188" width="10" height="10" rx="2" fill="#101827" opacity="1"/>
 <rect x="1024" y="202" width="10" height="10" rx="2" fill="#312E81" opacity="1"/>
 <rect x="1024" y="216" width="10" height="10" rx="2" fill="#8B5CF6" opacity="1"/>
-<rect x="1024" y="230" width="10" height="10" rx="2" fill="#0D1420" opacity="0.35"/>
+<rect x="1024" y="230" width="10" height="10" rx="2" fill="#101827" opacity="1"/>
 <rect x="1024" y="244" width="10" height="10" rx="2" fill="#0D1420" opacity="0.35"/>
 <rect x="1038" y="160" width="10" height="10" rx="2" fill="#0D1420" opacity="0.35"/>
 <rect x="1038" y="174" width="10" height="10" rx="2" fill="#0D1420" opacity="0.35"/>
