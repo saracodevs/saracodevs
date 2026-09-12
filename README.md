@@ -142,7 +142,7 @@ estudos e dos projetos que estou construindo.
 <p align="center">
   <a href="https://github.com/saracodevs/controle-financeiro-automatizado">
     <img
-      src="./assets/featured-projects-saracodevs.svg"
+      src="./assets/featured-projects-saracodevs-v2.svg""
       width="100%"
       alt="Featured Projects"
     />
