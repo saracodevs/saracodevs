@@ -35,7 +35,7 @@
 <g transform="translate(58 180)"><circle cx="12" cy="12" r="11" fill="#131B2A" stroke="#6D5DFB"/>
 <path d="M12 4c-4 4-5 7-5 10a5 5 0 0 0 10 0c0-3-2-5-5-10z" fill="#8B5CF6"/>
 <text x="38" y="17" class="label">Current Streak</text>
-<text x="300" y="17" text-anchor="end" class="value">2</text></g>
+<text x="300" y="17" text-anchor="end" class="value">0</text></g>
 <g transform="translate(58 240)"><circle cx="12" cy="12" r="11" fill="#131B2A" stroke="#6D5DFB"/>
 <path d="M8 18c7-2 8-7 8-11-3 2-5 1-6-1-3 4-4 8-2 12z" fill="#A78BFA"/>
 <text x="38" y="17" class="label">Longest Streak</text>
@@ -49,7 +49,7 @@
 <text x="38" y="17" class="label">Followers</text>
 <text x="300" y="17" text-anchor="end" class="value">1</text></g>
 <line x1="58" y1="415" x2="392" y2="415" stroke="#192334"/>
-<text x="58" y="445" class="small">atualizado automaticamente • 11/09/2026</text>
+<text x="58" y="445" class="small">atualizado automaticamente • 12/09/2026</text>
 <rect x="445" y="80" width="925" height="220" rx="16" fill="#0B1119" stroke="#253041"/>
 <text x="470" y="112" class="cardTitle">Contributions (2026)</text>
 <text x="520" y="145" class="small">Jan</text>
@@ -325,7 +325,7 @@
 <rect x="1024" y="202" width="10" height="10" rx="2" fill="#312E81" opacity="1"/>
 <rect x="1024" y="216" width="10" height="10" rx="2" fill="#8B5CF6" opacity="1"/>
 <rect x="1024" y="230" width="10" height="10" rx="2" fill="#101827" opacity="1"/>
-<rect x="1024" y="244" width="10" height="10" rx="2" fill="#0D1420" opacity="0.35"/>
+<rect x="1024" y="244" width="10" height="10" rx="2" fill="#101827" opacity="1"/>
 <rect x="1038" y="160" width="10" height="10" rx="2" fill="#0D1420" opacity="0.35"/>
 <rect x="1038" y="174" width="10" height="10" rx="2" fill="#0D1420" opacity="0.35"/>
 <rect x="1038" y="188" width="10" height="10" rx="2" fill="#0D1420" opacity="0.35"/>
