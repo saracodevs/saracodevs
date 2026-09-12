@@ -8,7 +8,7 @@
 <table>
 <tr>
 
-<td width="43%" valign="top">
+<td width="40%" valign="top">
 <h3>Hi, I'm Sara 👋</h3>
 
 <p>
@@ -22,24 +22,27 @@ estudos e dos projetos que estou construindo.
 </p>
 </td>
 
-<td width="33%" valign="top">
-<p>🟪 Atualmente estudando <b>Java</b></p>
+<td width="32%" valign="top">
+
+<p>☕ Atualmente estudando <b>Java</b></p>
 <p>🟣 Explorando <b>Web Development</b></p>
 <p>🎨 UI/UX e prototipação com <b>Figma</b></p>
 <p>🚀 Construindo projetos do mundo real</p>
+
 </td>
 
-<td width="24%" valign="middle" align="center">
+<td width="28%" valign="middle" align="center">
+
 <img
-src="./assets/quote-card-saracodevs-v2.png""
-width="220px"
-alt="Grandes resultados vêm de pequenos commits diários"
+  src="./assets/quote-card-saracodevs-v2.svg"
+  width="100%"
+  alt="Grandes resultados vêm de pequenos commits diários"
 />
+
 </td>
 
 </tr>
 </table>
-
 <h2>⚡ Tech Stack</h2>
 
 <div align="center">
