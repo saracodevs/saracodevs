@@ -172,7 +172,9 @@ a('''<defs>
 .label{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#CBD5E1}
 .value{font:700 22px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}
 .small{font:500 12px Inter,Segoe UI,Arial,sans-serif;fill:#64748B}
-.quote{font:500 22px Inter,Segoe UI,Arial,sans-serif;fill:#B8A1FF}
+.quote{font:700 25px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}
+.quoteAccent{font:700 25px Inter,Segoe UI,Arial,sans-serif;fill:#9B5CFF}
+.quoteMono{font:600 10px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#7C83A6;letter-spacing:1.4px}
 .mono{font:600 10px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#7C83A6;letter-spacing:1px}
 .lang{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#D6DCE8}
 .pct{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#AAB3C2}
@@ -274,12 +276,14 @@ for i in range(4):
         a(f'<circle cx="482" cy="{y}" r="6" fill="#334155"/>')
         a(f'<text x="502" y="{y+5}" class="lang">—</text>')
 
-a('<rect x="1015" y="325" width="355" height="210" rx="16" fill="#0B1119" stroke="#253041"/>')
-a('<text x="1050" y="382" class="quote">“Em constante</text>')
-a('<text x="1050" y="410" class="quote">evolução.”</text>')
-a('<text x="1050" y="466" class="mono">MESMO PROCESSO.</text>')
-a('<text x="1050" y="486" class="mono">MAIS RESULTADO.</text>')
-a('<text x="1335" y="505" text-anchor="end" style="font:700 16px ui-monospace,Consolas,monospace;fill:#8B5CF6;">&lt;/&gt;</text>')
+# Quote card — styled to match the About Me quote card
+a('<rect x="1015" y="325" width="355" height="210" rx="16" fill="#0B1119" stroke="#7C3AED" stroke-width="2"/>')
+a('<text x="1045" y="375" class="quote">“Em constante</text>')
+a('<text x="1045" y="410" class="quoteAccent">evolução.”</text>')
+a('<line x1="1045" y1="438" x2="1105" y2="438" stroke="#8B5CF6" stroke-width="2"/>')
+a('<text x="1045" y="475" class="quoteMono">MESMO PROCESSO.</text>')
+a('<text x="1045" y="495" class="quoteMono">MAIS RESULTADO.</text>')
+a('<text x="1335" y="510" text-anchor="end" style="font:700 18px ui-monospace,Consolas,monospace;fill:#8B5CF6;">&lt;/&gt;</text>')
 
 a('<line x1="30" y1="560" x2="1370" y2="560" stroke="#202938"/>')
 a('<line x1="30" y1="560" x2="150" y2="560" stroke="url(#purpleLine)" stroke-width="2"/>')
