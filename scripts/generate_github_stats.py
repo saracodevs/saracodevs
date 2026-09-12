@@ -156,40 +156,34 @@ def contribution_color(n):
 svg = []
 a = svg.append
 
-a('<svg width="1400" height="590" viewBox="0 0 1400 590" fill="none" xmlns="http://www.w3.org/2000/svg">')
-a('''<defs>
-<linearGradient id="bg" x1="0" y1="0" x2="1400" y2="590">
-  <stop stop-color="#0D1117"/>
-  <stop offset="1" stop-color="#090D13"/>
+a(f'''<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="420" viewBox="0 0 1400 420">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+  <stop stop-color="#0B0F15"/>
+  <stop offset="1" stop-color="#0A0E14"/>
 </linearGradient>
 <linearGradient id="purpleLine" x1="0" y1="0" x2="1" y2="1">
   <stop stop-color="#7C3AED"/>
   <stop offset="1" stop-color="#A78BFA"/>
 </linearGradient>
 <style>
-.title{font:700 22px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}
-.cardTitle{font:700 18px Inter,Segoe UI,Arial,sans-serif;fill:#E5E7EB}
-.label{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#CBD5E1}
-.value{font:700 22px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}
-.small{font:500 12px Inter,Segoe UI,Arial,sans-serif;fill:#64748B}
-.quote{font:700 25px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}
-.quoteAccent{font:700 25px Inter,Segoe UI,Arial,sans-serif;fill:#9B5CFF}
-.quoteMono{font:600 10px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#7C83A6;letter-spacing:1.4px}
-.mono{font:600 10px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#7C83A6;letter-spacing:1px}
-.lang{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#D6DCE8}
-.pct{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#AAB3C2}
+.cardTitle{{font:700 19px Inter,Segoe UI,Arial,sans-serif;fill:#E5E7EB}}
+.label{{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#CBD5E1}}
+.value{{font:700 22px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}}
+.small{{font:500 12px Inter,Segoe UI,Arial,sans-serif;fill:#64748B}}
+.quote{{font:700 27px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}}
+.quoteAccent{{font:700 27px Inter,Segoe UI,Arial,sans-serif;fill:#9B5CFF}}
+.quoteMono{{font:700 14px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#94A3B8;letter-spacing:1.5px}}
+.lang{{font:500 16px Inter,Segoe UI,Arial,sans-serif;fill:#D6DCE8}}
+.pct{{font:600 16px Inter,Segoe UI,Arial,sans-serif;fill:#AAB3C2}}
 </style>
 </defs>''')
 
-a('<rect width="1400" height="590" rx="18" fill="url(#bg)"/>')
-a('<rect x="1" y="1" width="1398" height="588" rx="17" stroke="#1F2937"/>')
-a('<rect x="28" y="28" width="20" height="16" rx="4" fill="#7C3AED"/>')
-a('<circle cx="38" cy="36" r="3" fill="#C4B5FD"/>')
-a('<text x="62" y="43" class="title">GitHub Stats</text>')
-a('<line x1="190" y1="36" x2="1278" y2="36" stroke="#202938"/>')
-a('<text x="1292" y="41" class="mono">//</text>')
+a('<rect width="1400" height="420" rx="18" fill="url(#bg)"/>')
+a('<rect x="1" y="1" width="1398" height="418" rx="17" stroke="#1F2937"/>')
 
-a('<rect x="30" y="80" width="390" height="390" rx="16" fill="#0B1119" stroke="#253041"/>')
+# LEFT — summary metrics
+a('<rect x="30" y="30" width="390" height="340" rx="16" fill="#0B1119" stroke="#253041"/>')
 
 rows = [
     ("Total Contributions", total_contributions, "plus"),
@@ -198,7 +192,7 @@ rows = [
     ("Total Repositories", repo_count, "repo"),
     ("Followers", followers, "user"),
 ]
-ys = [120, 180, 240, 300, 360]
+ys = [65, 120, 175, 230, 285]
 
 for (label, value, kind), y in zip(rows, ys):
     a(f'<g transform="translate(58 {y})"><circle cx="12" cy="12" r="11" fill="#131B2A" stroke="#6D5DFB"/>')
@@ -215,78 +209,43 @@ for (label, value, kind), y in zip(rows, ys):
     a(f'<text x="38" y="17" class="label">{esc(label)}</text>')
     a(f'<text x="300" y="17" text-anchor="end" class="value">{value}</text></g>')
 
-a('<line x1="58" y1="415" x2="392" y2="415" stroke="#192334"/>')
-a(f'<text x="58" y="445" class="small">atualizado automaticamente • {today.strftime("%d/%m/%Y")}</text>')
+a('<line x1="58" y1="326" x2="392" y2="326" stroke="#192334"/>')
+a(f'<text x="58" y="352" class="small">atualizado automaticamente • {today.strftime("%d/%m/%Y")}</text>')
 
-a('<rect x="445" y="80" width="925" height="220" rx="16" fill="#0B1119" stroke="#253041"/>')
-a(f'<text x="470" y="112" class="cardTitle">Contributions ({year})</text>')
+# CENTER — languages
+a('<rect x="445" y="30" width="545" height="340" rx="16" fill="#0B1119" stroke="#253041"/>')
+a('<text x="475" y="70" class="cardTitle">Top Languages</text>')
+a('<rect x="475" y="100" width="455" height="12" rx="6" fill="#111827"/>')
 
-jan1 = date(year, 1, 1)
-dec31 = date(year, 12, 31)
-grid_start = jan1 - timedelta(days=(jan1.weekday() + 1) % 7)
-weeks = math.ceil(((dec31 - grid_start).days + 1) / 7)
-
-grid_x, grid_y, gap, size = 520, 160, 14, 10
-months = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
-
-for month in range(1, 13):
-    first = date(year, month, 1)
-    week_idx = (first - grid_start).days // 7
-    x = grid_x + week_idx * gap
-    a(f'<text x="{x}" y="145" class="small">{months[month-1]}</text>')
-
-for label, row in [("Mon",1),("Wed",3),("Fri",5)]:
-    a(f'<text x="470" y="{grid_y + row*gap + 9}" class="small">{label}</text>')
-
-for week_index in range(weeks):
-    for row_index in range(7):
-        day = grid_start + timedelta(days=week_index * 7 + row_index)
-        if day.year != year or day > today:
-            fill, opacity = "#0D1420", "0.35"
-        else:
-            fill, opacity = contribution_color(counts.get(day.isoformat(), 0)), "1"
-        x = grid_x + week_index * gap
-        y = grid_y + row_index * gap
-        a(f'<rect x="{x}" y="{y}" width="{size}" height="{size}" rx="2" fill="{fill}" opacity="{opacity}"/>')
-
-a('<g transform="translate(1215 278)"><text x="-42" y="0" class="small">Less</text>')
-for i, color in enumerate(["#101827","#312E81","#4C1D95","#6D28D9","#8B5CF6"]):
-    a(f'<rect x="{i*15}" y="-10" width="10" height="10" rx="2" fill="{color}"/>')
-a('<text x="82" y="0" class="small">More</text></g>')
-
-a('<rect x="445" y="325" width="545" height="210" rx="16" fill="#0B1119" stroke="#253041"/>')
-a('<text x="470" y="360" class="cardTitle">Top Languages</text>')
-a('<rect x="470" y="388" width="450" height="10" rx="5" fill="#111827"/>')
-
-bar_x, bar_w, bar_cursor = 470, 450, 470
+bar_x, bar_w, bar_cursor = 475, 455, 475
 for i, (name, pct, color) in enumerate(top_langs):
     segment = bar_w * (pct / 100)
-    radius = 5 if i in (0, len(top_langs)-1) else 0
-    a(f'<rect x="{bar_cursor:.1f}" y="388" width="{max(segment,1):.1f}" height="10" rx="{radius}" fill="{color}"/>')
+    radius = 6 if i in (0, len(top_langs)-1) else 0
+    a(f'<rect x="{bar_cursor:.1f}" y="100" width="{max(segment,1):.1f}" height="12" rx="{radius}" fill="{color}"/>')
     bar_cursor += segment
 
 for i in range(4):
-    y = 425 + i * 28
+    y = 155 + i * 48
     if i < len(top_langs):
         name, pct, color = top_langs[i]
-        a(f'<circle cx="482" cy="{y}" r="6" fill="{color}"/>')
-        a(f'<text x="502" y="{y+5}" class="lang">{esc(name)}</text>')
-        a(f'<text x="955" y="{y+5}" text-anchor="end" class="pct">{pct:.1f}%</text>')
+        a(f'<circle cx="488" cy="{y}" r="7" fill="{color}"/>')
+        a(f'<text x="512" y="{y+6}" class="lang">{esc(name)}</text>')
+        a(f'<text x="955" y="{y+6}" text-anchor="end" class="pct">{pct:.1f}%</text>')
     else:
-        a(f'<circle cx="482" cy="{y}" r="6" fill="#334155"/>')
-        a(f'<text x="502" y="{y+5}" class="lang">—</text>')
+        a(f'<circle cx="488" cy="{y}" r="7" fill="#334155"/>')
+        a(f'<text x="512" y="{y+6}" class="lang">—</text>')
 
-# Quote card — styled to match the About Me quote card
-a('<rect x="1015" y="325" width="355" height="210" rx="16" fill="#0B1119" stroke="#7C3AED" stroke-width="2"/>')
-a('<text x="1045" y="375" class="quote">“Em constante</text>')
-a('<text x="1045" y="410" class="quoteAccent">evolução.”</text>')
-a('<line x1="1045" y1="438" x2="1105" y2="438" stroke="#8B5CF6" stroke-width="2"/>')
-a('<text x="1045" y="475" class="quoteMono">MESMO PROCESSO.</text>')
-a('<text x="1045" y="495" class="quoteMono">MAIS RESULTADO.</text>')
-a('<text x="1335" y="510" text-anchor="end" style="font:700 18px ui-monospace,Consolas,monospace;fill:#8B5CF6;">&lt;/&gt;</text>')
+# RIGHT — quote card
+a('<rect x="1015" y="30" width="355" height="340" rx="16" fill="#0B1119" stroke="#7C3AED" stroke-width="2"/>')
+a('<text x="1050" y="105" class="quote">“Em constante</text>')
+a('<text x="1050" y="145" class="quoteAccent">evolução.”</text>')
+a('<line x1="1050" y1="180" x2="1125" y2="180" stroke="#8B5CF6" stroke-width="2"/>')
+a('<text x="1050" y="235" class="quoteMono">MESMO PROCESSO.</text>')
+a('<text x="1050" y="265" class="quoteMono">MAIS RESULTADO.</text>')
+a('<text x="1335" y="330" text-anchor="end" style="font:700 20px ui-monospace,Consolas,monospace;fill:#8B5CF6;">&lt;/&gt;</text>')
 
-a('<line x1="30" y1="560" x2="1370" y2="560" stroke="#202938"/>')
-a('<line x1="30" y1="560" x2="150" y2="560" stroke="url(#purpleLine)" stroke-width="2"/>')
+a('<line x1="30" y1="395" x2="1370" y2="395" stroke="#202938"/>')
+a('<line x1="30" y1="395" x2="160" y2="395" stroke="url(#purpleLine)" stroke-width="2"/>')
 a('</svg>')
 
 OUT.parent.mkdir(parents=True, exist_ok=True)
