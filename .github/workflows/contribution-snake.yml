@@ -1,0 +1,40 @@
+name: Atualizar Contribution Snake
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "27 3 * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Baixar repositório
+        uses: actions/checkout@v4
+
+      - name: Preparar pasta
+        run: mkdir -p assets/snake
+
+      - name: Gerar cobrinha das contribuições
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/snake/github-snake-dark.svg?palette=github-dark&color_snake=%238B5CF6&color_dots=%230D1117,%23312E81,%234C1D95,%236D28D9,%238B5CF6
+            assets/snake/github-snake-light.svg?palette=github-light&color_snake=%237C3AED
+
+      - name: Salvar atualização
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/snake/*.svg
+          if git diff --cached --quiet; then
+            echo "Nenhuma alteração."
+          else
+            git commit -m "chore: update contribution snake [skip ci]"
+            git push
+          fi
