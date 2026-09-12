@@ -39,7 +39,7 @@
     .small{font:600 11px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#7C83A6;letter-spacing:1px}
     .button{font:700 14px Inter,Segoe UI,Arial,sans-serif;fill:#E9DDFF}
     .soon{font:700 18px Inter,Segoe UI,Arial,sans-serif;fill:#8B949E}
-    .muted{font:600 12px Inter,Segoe UI,Arial,sans-serif;fill:#8B93A7}
+    .muted{font:500 11px Inter,Segoe UI,Arial,sans-serif;fill:#7E88A3}
   </style>
 </defs>
 
@@ -94,9 +94,9 @@
 <text x="509" y="222" class="desc">Um novo projeto está sendo construído.</text>
 <text x="509" y="244" class="desc">Aprendizado, prática e evolução.</text>
 <text x="509" y="306" class="small">BUILD &gt; LEARN &gt; CREATE</text>
-<rect x="509" y="355" width="375" height="42" rx="10" fill="#0E1520" stroke="#253041"/>
-<text x="696" y="381" text-anchor="middle" class="soon">COMING SOON</text>
-<text x="696" y="403" text-anchor="middle" class="muted">em desenvolvimento</text>
+<rect x="509" y="350" width="375" height="42" rx="10" fill="#0E1520" stroke="#253041"/>
+<text x="696" y="376" text-anchor="middle" class="soon">COMING SOON</text>
+<text x="696" y="414" text-anchor="middle" class="muted">em desenvolvimento</text>
 
 <!-- Card 3 -->
 <rect x="945" y="80" width="425" height="340" rx="16" fill="#0B1119" stroke="#253041"/>
@@ -106,9 +106,9 @@
 <text x="967" y="222" class="desc">Mais uma ideia saindo do papel</text>
 <text x="967" y="244" class="desc">e virando código.</text>
 <text x="967" y="306" class="small">&gt;_ DEVELOPING THE FUTURE</text>
-<rect x="967" y="355" width="375" height="42" rx="10" fill="#0E1520" stroke="#253041"/>
-<text x="1154" y="381" text-anchor="middle" class="soon">COMING SOON</text>
-<text x="1154" y="403" text-anchor="middle" class="muted">próximo projeto</text>
+<rect x="967" y="350" width="375" height="42" rx="10" fill="#0E1520" stroke="#253041"/>
+<text x="1154" y="376" text-anchor="middle" class="soon">COMING SOON</text>
+<text x="1154" y="414" text-anchor="middle" class="muted">próximo projeto</text>
 
 <line x1="30" y1="445" x2="1370" y2="445" stroke="#202938"/>
 <line x1="30" y1="445" x2="175" y2="445" stroke="url(#accent)" stroke-width="2"/>
