@@ -26,7 +26,7 @@
 <g transform="translate(58 65)"><circle cx="12" cy="12" r="11" fill="#131B2A" stroke="#6D5DFB"/>
 <path d="M7 12h10M12 7v10" stroke="#9C8CFF" stroke-width="2" stroke-linecap="round"/>
 <text x="38" y="17" class="label">Total Contributions</text>
-<text x="300" y="17" text-anchor="end" class="value">41</text></g>
+<text x="300" y="17" text-anchor="end" class="value">42</text></g>
 <g transform="translate(58 120)"><circle cx="12" cy="12" r="11" fill="#131B2A" stroke="#6D5DFB"/>
 <path d="M12 4c-4 4-5 7-5 10a5 5 0 0 0 10 0c0-3-2-5-5-10z" fill="#8B5CF6"/>
 <text x="38" y="17" class="label">Current Streak</text>
