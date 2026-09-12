@@ -1,0 +1,115 @@
+<svg width="1400" height="470" viewBox="0 0 1400 470" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1400" y2="470">
+    <stop stop-color="#0D1117"/>
+    <stop offset="1" stop-color="#090D13"/>
+  </linearGradient>
+
+  <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#7C3AED"/>
+    <stop offset="1" stop-color="#A78BFA"/>
+  </linearGradient>
+
+  <linearGradient id="accentSoft" x1="0" y1="0" x2="1" y2="1">
+    <stop stop-color="#1A1035"/>
+    <stop offset="1" stop-color="#0F172A"/>
+  </linearGradient>
+
+  <linearGradient id="buttonGrad" x1="0" y1="0" x2="1" y2="0">
+    <stop stop-color="#1A1236"/>
+    <stop offset="1" stop-color="#101827"/>
+  </linearGradient>
+
+  <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+    <feGaussianBlur stdDeviation="12" result="blur"/>
+    <feColorMatrix in="blur" type="matrix"
+      values="1 0 0 0 0.486
+              0 1 0 0 0.227
+              0 0 1 0 0.929
+              0 0 0 0.32 0"/>
+  </filter>
+
+  <style>
+    .title{font:700 22px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}
+    .project{font:700 22px Inter,Segoe UI,Arial,sans-serif;fill:#F1F5F9}
+    .projectMain{font:800 24px Inter,Segoe UI,Arial,sans-serif;fill:#FFFFFF}
+    .desc{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#AAB3C2}
+    .descMain{font:500 15px Inter,Segoe UI,Arial,sans-serif;fill:#C5D0DD}
+    .tag{font:600 12px Inter,Segoe UI,Arial,sans-serif;fill:#D8D4FE}
+    .small{font:600 11px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#7C83A6;letter-spacing:1px}
+    .button{font:700 14px Inter,Segoe UI,Arial,sans-serif;fill:#E9DDFF}
+    .soon{font:700 18px Inter,Segoe UI,Arial,sans-serif;fill:#8B949E}
+    .muted{font:600 12px Inter,Segoe UI,Arial,sans-serif;fill:#8B93A7}
+  </style>
+</defs>
+
+<rect width="1400" height="470" rx="18" fill="url(#bg)"/>
+<rect x="1" y="1" width="1398" height="468" rx="17" stroke="#1F2937"/>
+
+<!-- Header -->
+<rect x="28" y="27" width="20" height="16" rx="4" fill="#7C3AED"/>
+<path d="M34 31h8v8h-8z" stroke="#C4B5FD"/>
+<text x="62" y="43" class="title">Featured Projects</text>
+<line x1="235" y1="36" x2="1278" y2="36" stroke="#202938"/>
+<text x="1292" y="41" class="small">//</text>
+
+<!-- Card 1 glow -->
+<rect x="24" y="74" width="437" height="352" rx="20" fill="#7C3AED" opacity="0.15" filter="url(#glow)"/>
+
+<!-- Card 1 -->
+<rect x="30" y="80" width="425" height="340" rx="16" fill="url(#accentSoft)" stroke="#7C3AED" stroke-width="1.6"/>
+<rect x="52" y="103" width="44" height="44" rx="10" fill="#15112A" stroke="#8B5CF6"/>
+<path d="M65 126h18M67 120h14M70 114h8" stroke="#C4B5FD" stroke-width="2" stroke-linecap="round"/>
+<circle cx="74" cy="130" r="3" fill="#A78BFA"/>
+
+<rect x="347" y="106" width="80" height="28" rx="14" fill="#161028" stroke="#8B5CF6"/>
+<circle cx="362" cy="120" r="4" fill="#A855F7"/>
+<text x="374" y="124" class="tag">PUBLIC</text>
+
+<text x="52" y="178" class="projectMain">Controle Financeiro</text>
+<text x="52" y="206" class="projectMain">Automatizado</text>
+
+<text x="52" y="242" class="descMain">Automação para controle financeiro</text>
+<text x="52" y="264" class="descMain">com organização de dados e rotinas</text>
+<text x="52" y="286" class="descMain">integradas ao Google Sheets.</text>
+
+<text x="52" y="315" class="small">PROJETO EM DESTAQUE</text>
+
+<circle cx="58" cy="337" r="5" fill="#F7DF1E"/>
+<text x="70" y="342" class="tag">JavaScript</text>
+<circle cx="160" cy="337" r="5" fill="#8B5CF6"/>
+<text x="172" y="342" class="tag">Apps Script</text>
+<circle cx="275" cy="337" r="5" fill="#34A853"/>
+<text x="287" y="342" class="tag">Google Sheets</text>
+
+<rect x="52" y="362" width="375" height="42" rx="10" fill="url(#buttonGrad)" stroke="#6D5DFB"/>
+<text x="74" y="388" class="button">View Repository</text>
+<path d="M395 383h12M402 377l6 6-6 6" stroke="#C4B5FD" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+
+<!-- Card 2 -->
+<rect x="487" y="80" width="425" height="340" rx="16" fill="#0B1119" stroke="#253041"/>
+<rect x="509" y="103" width="44" height="44" rx="10" fill="#101827" stroke="#334155"/>
+<path d="M520 126h22M531 115v22" stroke="#64748B" stroke-width="2" stroke-linecap="round"/>
+<text x="509" y="182" class="project">Building...</text>
+<text x="509" y="222" class="desc">Um novo projeto está sendo construído.</text>
+<text x="509" y="244" class="desc">Aprendizado, prática e evolução.</text>
+<text x="509" y="306" class="small">BUILD &gt; LEARN &gt; CREATE</text>
+<rect x="509" y="355" width="375" height="42" rx="10" fill="#0E1520" stroke="#253041"/>
+<text x="696" y="381" text-anchor="middle" class="soon">COMING SOON</text>
+<text x="696" y="403" text-anchor="middle" class="muted">em desenvolvimento</text>
+
+<!-- Card 3 -->
+<rect x="945" y="80" width="425" height="340" rx="16" fill="#0B1119" stroke="#253041"/>
+<rect x="967" y="103" width="44" height="44" rx="10" fill="#101827" stroke="#334155"/>
+<path d="M978 130l11-18 11 18-11-5-11 5z" stroke="#64748B" stroke-width="2" fill="none" stroke-linejoin="round"/>
+<text x="967" y="182" class="project">Next Project</text>
+<text x="967" y="222" class="desc">Mais uma ideia saindo do papel</text>
+<text x="967" y="244" class="desc">e virando código.</text>
+<text x="967" y="306" class="small">&gt;_ DEVELOPING THE FUTURE</text>
+<rect x="967" y="355" width="375" height="42" rx="10" fill="#0E1520" stroke="#253041"/>
+<text x="1154" y="381" text-anchor="middle" class="soon">COMING SOON</text>
+<text x="1154" y="403" text-anchor="middle" class="muted">próximo projeto</text>
+
+<line x1="30" y1="445" x2="1370" y2="445" stroke="#202938"/>
+<line x1="30" y1="445" x2="175" y2="445" stroke="url(#accent)" stroke-width="2"/>
+</svg>
