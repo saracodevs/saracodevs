@@ -31,7 +31,7 @@ estudos e dos projetos que estou construindo.
 
 <td width="24%" valign="middle" align="center">
 <img
-src="./assets/quote-card-saracodevs-v2.svg"
+src="./assets/quote-card-saracodevs-v2.png""
 width="220px"
 alt="Grandes resultados vêm de pequenos commits diários"
 />
