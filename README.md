@@ -104,6 +104,8 @@ estudos e dos projetos que estou construindo.
 </div>
 <br>
 
+<br>
+
 <h2>📊 GitHub Stats</h2>
 
 <p align="center">
@@ -113,6 +115,26 @@ estudos e dos projetos que estou construindo.
     alt="GitHub Stats"
   />
 </p>
+
+<p align="center">
+  <picture>
+    <source
+      media="(prefers-color-scheme: dark)"
+      srcset="./assets/snake/github-snake-dark.svg"
+    />
+    <source
+      media="(prefers-color-scheme: light)"
+      srcset="./assets/snake/github-snake-light.svg"
+    />
+    <img
+      src="./assets/snake/github-snake-dark.svg"
+      width="100%"
+      alt="GitHub contribution snake"
+    />
+  </picture>
+</p>
+
+<br>
 
 
 <h2>🚀 Featured Projects</h2>
