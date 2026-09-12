@@ -154,16 +154,10 @@ estudos e dos projetos que estou construindo.
 <h2>🤝 Let's Connect</h2>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/sara-souza-98a22030b?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
-    <img src="./assets/connect-linkedin.svg" width="23%" alt="LinkedIn">
-  </a>
-  <a href="https://www.instagram.com/saracrz.co/">
-    <img src="./assets/connect-instagram.svg" width="23%" alt="Instagram">
-  </a>
-  <a href="mailto:sara.codevs@gmail.com">
-    <img src="./assets/connect-email.svg" width="23%" alt="Email">
-  </a>
-  <img src="./assets/connect-portfolio.svg" width="23%" alt="Portfolio Coming Soon">
+<a href="https://www.linkedin.com/in/sara-souza-98a22030b?utm_source=share_via&utm_content=profile&utm_medium=member_ios"><img src="./assets/connect-linkedin.svg" width="23%" alt="LinkedIn"></a>
+<a href="https://www.instagram.com/saracrz.co/"><img src="./assets/connect-instagram.svg" width="23%" alt="Instagram"></a>
+<a href="mailto:sara.codevs@gmail.com"><img src="./assets/connect-email.svg" width="23%" alt="Email"></a>
+<img src="./assets/connect-portfolio.svg" width="23%" alt="Portfolio Coming Soon">
 </p>
 
 <br>
