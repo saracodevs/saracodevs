@@ -137,13 +137,7 @@ estudos e dos projetos que estou construindo.
 <h2>🚀 Featured Projects</h2>
 
 <p align="center">
-  <a href="https://github.com/saracodevs/controle-financeiro-automatizado">
-    <img
-      src="./assets/featured-projects-saracodevs-v2.svg""
-      width="100%"
-      alt="Featured Projects"
-    />
-  </a>
+<a href="https://github.com/saracodevs/julius-finance-system"><img src="./assets/featured-projects-saracodevs-v3.svg" width="100%" alt="Featured Projects"></a>
 </p>
 
 <h2>🤝 Let's Connect</h2>
