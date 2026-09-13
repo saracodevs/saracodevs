@@ -10,10 +10,8 @@
 
 <table>
 <tr>
-
 <td width="40%" valign="top">
 <h3>Hi, I'm Sara 👋</h3>
-
 <p>
 Software Developer em formação, criando projetos reais,
 aprendendo todos os dias e transformando ideias em soluções.
@@ -26,7 +24,8 @@ estudos e dos projetos que estou construindo.
 </td>
 
 <td width="32%" valign="top">
-
+<br>
+<br>
 <p>☕ Atualmente estudando <b>Java</b></p>
 <p>🟣 Explorando <b>Web Development</b></p>
 <p>🎨 UI/UX e prototipação com <b>Figma</b></p>
