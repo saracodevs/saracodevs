@@ -1,0 +1,29 @@
+<svg width="320" height="300" viewBox="0 0 320 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="320" y2="300" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#0B1119"/>
+    <stop offset="1" stop-color="#090D13"/>
+  </linearGradient>
+
+  <style>
+    .quote{font:700 24px Inter,Segoe UI,Arial,sans-serif;fill:#F8FAFC}
+    .accent{font:700 24px Inter,Segoe UI,Arial,sans-serif;fill:#9B5CFF}
+    .mono{font:600 10px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#7C83A6;letter-spacing:1.35px}
+    .code{font:700 18px ui-monospace,SFMono-Regular,Consolas,monospace;fill:#8B5CF6}
+  </style>
+</defs>
+
+<rect x="1" y="1" width="318" height="298" rx="17" fill="url(#bg)" stroke="#7C3AED" stroke-width="2"/>
+
+<text x="30" y="58" class="accent">“Disciplina</text>
+<text x="30" y="92" class="quote">é o que te leva</text>
+<text x="30" y="126" class="quote">do plano ao</text>
+<text x="30" y="160" class="quote">resultado.”</text>
+
+<line x1="30" y1="194" x2="92" y2="194" stroke="#8B5CF6" stroke-width="2"/>
+
+<text x="30" y="232" class="mono">CONSISTÊNCIA.</text>
+<text x="30" y="250" class="mono">FOCO. EVOLUÇÃO.</text>
+
+<text x="287" y="268" text-anchor="end" class="code">&lt;/&gt;</text>
+</svg>
