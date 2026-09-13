@@ -1,7 +1,10 @@
 <p align="center">
-  <img src="./assets/banner-saracodevs.png" width="100%" alt="Banner sara.codevs"/>
+  <img
+    src="./assets/banner-saracodevs.png"
+    width="100%"
+    alt="Banner sara.codevs"
+  />
 </p>
-
 
 <h2>💜 About Me</h2>
 
