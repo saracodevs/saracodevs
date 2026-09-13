@@ -100,11 +100,8 @@ estudos e dos projetos que estou construindo.
 
 </tr>
 </table>
-
+<br>
 </div>
-<br>
-
-<br>
 
 <h2>📊 GitHub Stats</h2>
 
@@ -134,9 +131,6 @@ estudos e dos projetos que estou construindo.
   </picture>
 </p>
 
-<br>
-
-
 <h2>🚀 Featured Projects</h2>
 
 <p align="center">
@@ -149,8 +143,6 @@ estudos e dos projetos que estou construindo.
   </a>
 </p>
 
-<br>
-
 <h2>🤝 Let's Connect</h2>
 
 <p align="center">
@@ -159,12 +151,9 @@ estudos e dos projetos que estou construindo.
 <a href="mailto:sara.codevs@gmail.com"><img src="./assets/connect-email.svg" width="23%" alt="Email"></a>
 <img src="./assets/connect-portfolio.svg" width="23%" alt="Portfolio Coming Soon">
 </p>
-
-<br>
-
 <p align="center">
   <img
-    src="./assets/footer-saracodevs.svg"
+    src="./assets/footer-saracodevs-v2.svg"
     width="100%"
     alt="sara.codevs terminal footer"
   />
