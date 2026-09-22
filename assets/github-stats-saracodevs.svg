@@ -44,7 +44,7 @@
 <text x="38" y="17" class="label">Followers</text>
 <text x="300" y="17" text-anchor="end" class="value">8</text></g>
 <line x1="58" y1="326" x2="392" y2="326" stroke="#192334"/>
-<text x="58" y="352" class="small">atualizado automaticamente • 21/09/2026</text>
+<text x="58" y="352" class="small">atualizado automaticamente • 22/09/2026</text>
 <rect x="445" y="30" width="545" height="340" rx="16" fill="#0B1119" stroke="#253041"/>
 <text x="475" y="70" class="cardTitle">Top Languages</text>
 <rect x="475" y="100" width="455" height="12" rx="6" fill="#111827"/>
